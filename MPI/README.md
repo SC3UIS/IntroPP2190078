@@ -1,4 +1,5 @@
 # MPI
+
 Este programa utiliza el método de integración trapezoidal para calcular la integral de una función dada, en este caso x^2, en un intervalo [a,b] dividido en n subintervalos. En este caso la integral de x^2 con el intervalo [50,1.000.000] y 1.000.000 subintervalos.
 
 Se paralelizo con openMPI, dividiendo el trabajo entre múltiples procesos. cada uno calculando una parte de la suma y luego combinando los resultados para obtener el resultado final.
@@ -35,8 +36,11 @@ Este leera las lineas de comandos en el archivo y ejecutará este proceso en GUA
 **Análisis de tiempos de ejecución**
 
 En general, la diferencia en los valores de la integral se debe a los diferentes enfoques utilizados para el paralelismo. 
+ 
 MPI divide el trabajo entre múltiples procesos, mientras que OpenMP utiliza múltiples hilos en un proceso. 
 Esto puede llevar a diferencias en los resultados debido a la forma en que se manejan los cálculos y las operaciones de reducción.
 
 En cuanto a los tiempos de ejecución, el código paralelizado con MPI muestra el tiempo más rápido, seguido por la versión sin paralelización y, finalmente, el código paralelizado con OpenMP. 
+
 Esto puede ser atribuido a las características de escalabilidad y a la implementación particular del código en cada caso. 
+
