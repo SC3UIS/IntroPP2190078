@@ -1,0 +1,19 @@
+
+mpi_trapezAreaSimple
+
+The integral is: 333338833058470528.000000
+Sequential Time: 0.004273 seconds
+Parallel Time: 0.000356 seconds
+Acceleration: 12.000000
+
+
+omp_trapezAreaSimple
+
+The integral is: 333351367833253952.000000
+El tiempo empleado es: 0.041715 segundos
+
+
+trapezAreaSimple
+
+The integral is: 333333333333469440.000000
+El tiempo empleado es: 0.026555 segundos
