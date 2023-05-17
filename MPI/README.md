@@ -33,6 +33,7 @@ Para ejecutarlo se usa el archivo trapezAreaSimple.sbatch y se ejecuta el comand
 Este leera las lineas de comandos en el archivo y ejecutará este proceso en GUANE devolviendo un archivo de output que en este caso son los resultados de la integral de la función y los tiempos de ejecución de esta.
 
 
+
 **Análisis de tiempos de ejecución**
 
 En general, la diferencia en los valores de la integral se debe a los diferentes enfoques utilizados para el paralelismo. 
